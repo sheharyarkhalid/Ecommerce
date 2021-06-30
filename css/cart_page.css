@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+*{
+    -web-kit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+   padding:0px;
+   margin:0px;
+font-family: 'Open Sans', sans-serif;   
+}
+   html {
+     scroll-behavior: smooth;
+    }
+   body{
+       float: left;
+       width: 100%;
+       margin:0px;
+       display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+   .container{
+       max-width: 1170px;
+       margin: 0px auto;
+    }
+/* Header style start */
+header{
+    float: left;
+    width: 100%;
+margin-bottom: 40px;
+background-color: #6d6dee;    
+}
+    header .header_section{
+        float: left;
+        width: 100%;
+        padding:10px 10px
+    
+    }
+    header .header_section h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 50px;
+        color: yellow;
+        font-weight: bolder;
+        margin-bottom: 15px;
+    }
+    header .header_section .nav_bar{
+       display: flex;
+       justify-content: space-between;
+        width: 100%;
+    }
+    header .header_section .nav_bar a{
+  
+        text-decoration: none;
+color: yellow;
+font-weight: bold;
+font-size: 22px;
+        
+    }
+    header .header_section .nav_bar ul{
+        display: flex;
+align-items: center;
+justify-content: right;
+    }
+    header .header_section .nav_bar ul li{
+        list-style: none;
+        color: yellow;
+        padding: 0px 10px;
+    }
+    header .header_section .nav_bar ul li a{
+        text-decoration: none;
+        color: yellow;
+        font-weight: bold;
+      
+        font-size: 22px;
+    }
+    header .header_section .nav_bar ul li a i{
+        padding: 0px 10px;
+    }
+ .cart_section{
+     float: left;
+     width: 100%;
+     margin-bottom: 40px;
+ }
+ .cart_section .cart_start {
+     padding: 0px 15px;
+ }
+ .cart_section .cart_start h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+ table{
+    width: 100%;
+  margin-bottom: 15px;
+  table-layout: auto;
+  
+  }
+ 
+  
+  tr:nth-child(even){background-color: #f2f2f2;} 
+
+  table tr th{
+            background: #6d6dee;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      font-size: 17px;
+      padding: 10px 10px;
+  }
+  
+  table tr td{
+         background: lightgray;
+      align-items: center;
+      text-align: center;
+      color: #252525;
+      font-size: 17px;
+      padding: 10px 10px;
+  }
+
+    footer{
+      
+            float: left;
+            width: 100%;
+        background-color: #6d6dee;    
+  margin-top: auto;
+    }
+    footer span{
+        text-align: center;
+        color:#ffff;
+        font-size: 20px;
+        padding: 15px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .cart_total{
+        float: left;
+        
+        margin-bottom: 30px;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        flex-direction: column;
+    }
+    .cart_box{
+      
+        padding: 0px 15px;
+       
+    }
+    .cart_box h2{
+    padding: 20px 0px;
+    }
+    .price_box{
+      display: flex;
+      flex-direction: column;
+      background-color: lightgray;
+      padding: 20px 30px;
+    }
+    .price_box span {
+        margin-bottom: 21px;
+        display: block;
+    }
+    .price_box span strong {
+       padding:0px 15px;
+    }
+    .price_box  a {
+    text-align: center;
+text-decoration: none;
+background: #5f5fea;
+color: yellow;
+padding: 10px 15px;
+border-radius: 4px;
+font-size: 20px;
+font-weight: bold;
+    }
+    .calculation{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*RESPONSIVE*/
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  
+
+    }
+
+
+
+
+
+/*mobile rotation*/
+@media (max-width: 767px) {
+    .products_list .list {
+        grid-template-columns: auto auto;
+    }
+    header .header_section .nav_bar ul {
+        justify-content: center;
+    }
+
+    }
+
+/*mobile*/
+@media (max-width: 540px) { 
+    .products_list .list {
+        grid-template-columns: auto;
+    }
+    header .header_section .nav_bar ul {
+        justify-content: center;
+    }
+    header .header_section h2 {
+        font-size:35px ;
+    }
+
+
+    }
