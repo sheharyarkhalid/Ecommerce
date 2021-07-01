@@ -42,10 +42,20 @@ background-color: #6d6dee;
         font-size: 50px;
         color: yellow;
         font-weight: bolder;
+        margin-bottom: 15px;
     }
     header .header_section .nav_bar{
-        float: left;
+       display: flex;
+       justify-content: space-between;
         width: 100%;
+    }
+    header .header_section .nav_bar a{
+  
+        text-decoration: none;
+color: yellow;
+font-weight: bold;
+font-size: 22px;
+        
     }
     header .header_section .nav_bar ul{
         display: flex;
@@ -67,50 +77,87 @@ justify-content: right;
     header .header_section .nav_bar ul li a i{
         padding: 0px 10px;
     }
-    .products_list{
+    .product_section{
+float: left;
+width: 100%;
+margin-bottom: 30px;
+    }
+    .product_section h2{
+        float: left;
+width: 100%;
+margin-bottom: 30px;
+padding: 0px 15px;
+    }
+    form{
         float: left;
         width: 100%;
-        margin-bottom: 40px;
     }
-    .products_list .list{
-
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap:25px 40px;
-        padding: 0px 10px;
-    }
-    .single_product{
-    border-bottom: 2px solid #6d6dee;
-padding-bottom: 15px;
-}
-    .single_product h2{
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    .single_product h2 a{
-     text-decoration: none;
-     color:#252525;
-    }
-    .single_product .price{
-        text-align: center;
-       
-    }
-    .single_product .price span{
-        font-size: 20px;
-    }
-    .single_product .price strong{
-       padding: 0px 10px;
-       
-    }
-    .single_product .img a{
-        margin-bottom: 15px;
+     form .product_detail{
+       display: grid;
+       grid-template-columns: auto auto auto;
+       gap:10px 60px;
         width: 100%;
-        display: block;
+        padding: 0px 15px;
     }
-    .single_product .img img{
-       width: 100%;
-      
+    .single_product h3{
+        margin-bottom: 10px;
     }
+    .single_product h3 span{
+        color: red;
+    }
+    .single_product p{
+        margin-bottom: 10px;
+        font-size: 12px;
+        max-width: 240px;
+    }
+    .single_product p a{
+        text-decoration: none;
+    }
+    .single_product .name_fields{
+        margin-bottom: 20px;
+    }
+    .single_product .name_fields > label{
+      display: block;
+      margin-bottom: 5px;
+    }
+    .single_product .name_fields label span{
+        color: red;
+    }
+    .single_product .name_fields > input{
+        width: 100%;
+        background-color: lightgray;
+        padding: 5px;
+        border: none;
+    }
+    .single_product .name_fields select{
+        width: 100%;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    .single_product .name_fields .select_gender{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .single_product .name_fields .select_gender .gender{
+        padding-bottom: 15px;
+    }
+    .single_product .name_fields .select_gender .gender label{
+       padding: 0px 10px;
+    }
+.cart_btn{
+text-align: right;
+padding:0px 15px;
+}
+.cart_btn button{
+background-color: brown;
+padding:10px 20px;
+color:#fff;
+font-size: 20px;
+cursor: pointer;
+border: none;
+}
 
     footer{
       
@@ -128,7 +175,7 @@ padding-bottom: 15px;
         align-items: center;
         justify-content: center;   
     }
-
+   
     /*RESPONSIVE*/
 
 /*Tablet*/
@@ -144,25 +191,34 @@ padding-bottom: 15px;
 
 /*mobile rotation*/
 @media (max-width: 767px) {
-    .products_list .list {
-        grid-template-columns: auto auto;
-    }
+
     header .header_section .nav_bar ul {
         justify-content: center;
     }
-
+    form .product_detail{
+    
+        grid-template-columns: auto auto;
+    }
+    .cart_btn {
+        text-align: center;
+    }
     }
 
 /*mobile*/
 @media (max-width: 540px) { 
-    .products_list .list {
-        grid-template-columns: auto;
-    }
+ 
     header .header_section .nav_bar ul {
         justify-content: center;
     }
     header .header_section h2 {
         font-size:35px ;
+    }
+    form .product_detail{
+    
+        grid-template-columns: auto;
+    }
+    .cart_btn {
+        text-align: center;
     }
 
 
